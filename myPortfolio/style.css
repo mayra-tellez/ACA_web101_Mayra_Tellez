@@ -1,14 +1,15 @@
  body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);
+    background: lightslategray;
+    background-image: url("./backgroundimg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background: lightslategray
   }
+
   /* What kind of selector is this? */
   .logo {
-    width: 150px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
     margin: 3% 10%;
     object-fit: contain;
   }
@@ -32,20 +33,18 @@
     height: 10%;
     width: 15%;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Dosis';
     font-size: 20px;
     border-radius: 25px;
-    background: transparent;
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    border: 2px solid white;
+    text-transform: uppercase;
   }
 
-  .has-border {
-    border-radius: 25px;
-    border: 2px solid #0795C3;
-    background: none;
+  .has-border:hover {
+    background:rgb(169, 197, 228);
+    border-radius: 20px;
     padding: 20px;
   }
 
@@ -55,20 +54,21 @@
     width: 100%;
     padding-right: 2%;
   }
+
   /* This is an ID selector */
   #profile-pic {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
-    margin: 15% auto;
+    border-radius: 74% 26% 33% 67% / 50% 28% 72% 50%;
+    margin: 10% auto;
     grid-column: 2/3;
     object-fit: cover;
   }
 
   h1 {
-    color:white;
+    color:#345270;
     grid-column: 2/3;
-    margin: 3% auto;
+    margin: 2% auto;
   }
 
   h2 {
@@ -87,20 +87,17 @@
   button {
     grid-column: 2/3;
     margin: 3% auto;
-    width: 70%;
+    width: 55%;
     height: 15%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family: 'Dosis';
+    font-size: 25px;
     border-radius: 25px;
-    background: transparent;
+    border: none;
+    background: #345270;
     padding: 20px;
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     text-align: center;
     color: white;
-    letter-spacing: 10px;
-    font-style: none;
-  }
-
-  #portfolio {
-      background: transparent;
+    letter-spacing: 3px;
+    text-transform: uppercase;
   }
