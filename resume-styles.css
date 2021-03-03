@@ -1,6 +1,7 @@
 .main-container {
     height: 11in;
     width: 8.5in;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 3fr 7fr;
     grid-template-rows: 3fr 7fr;
@@ -8,40 +9,77 @@
 }
 
 .main-container header {
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 25px;
     grid-column: 1/3;
     grid-row: 1/2;
-    background-color: aqua;
     display: flex;
     justify-content: flex-start;
 }
 
-.main-container .contact {
+.main-container .contact-info {
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
     grid-column: 1/2;
     grid-row: 2/3;
-    background-color: brown;
+    background-color: #458DD7;
     text-align: center;
+    color: white;
+}
+
+.contact-info h3 {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
 }
 
 .main-container .history {
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 43px;
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: cadetblue;
+}
+
+.history h3 {
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        border-bottom: 1px solid purple;
 }
 
 .photo {
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
 }
 
 #headshot {
     width: 150px;
     height: 150px;
     object-fit: cover;
+    box-shadow: -10px 10px purple;
 }
 
-.intro {
+.bio {
     width: 70%;
-    background-color: chocolate;
+    padding-right: 10px;
+    color: #2A0A5A;
 }
+
+#name {
+    color: #2A0A5A;
+    text-transform: uppercase;
+    font-size: 50px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #2A0A5A;
+    font-family: 'Kanit', sans-serif;
+    line-height: 60px;
+}
+
+h2 {
+    color: #2A0A5A;
+}
+
