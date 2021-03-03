@@ -1,0 +1,47 @@
+.main-container {
+    height: 11in;
+    width: 8.5in;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 3fr 7fr;
+    background-color: #F9FFFB;
+}
+
+.main-container header {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: aqua;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-container .contact {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: brown;
+    text-align: center;
+}
+
+.main-container .history {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: cadetblue;
+}
+
+.photo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+#headshot {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.intro {
+    width: 70%;
+    background-color: chocolate;
+}
