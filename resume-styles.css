@@ -3,14 +3,14 @@
     width: 8.5in;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 3fr 7fr;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 3fr 7fr;
     background-color: #F9FFFB;
 }
 
 .main-container header {
     box-sizing: border-box;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 25px;
     grid-column: 1/3;
     grid-row: 1/2;
@@ -19,51 +19,75 @@
 }
 
 .main-container .contact-info {
+    box-sizing: border-box;
     padding-top: 60px;
     padding-left: 40px;
     padding-right: 40px;
     grid-column: 1/2;
     grid-row: 2/3;
-    background-color: #458DD7;
+    background-color: #1b6cd6;
     text-align: center;
     color: white;
+    box-shadow: inset rgb(102, 59, 221) -30px 200px 100px 0;
+    font-size: 13px;
+    line-height: 30px;
 }
 
-.contact-info h3 {
-    text-transform: uppercase;
+.contact-info h4 {
     padding-bottom: 15px;
     border-bottom: 1px solid white;
+    font-family: 'Courier Prime', monospace;
+    font-size: 20px;
+    letter-spacing: 7px;
+}
+
+.contact-info .contact-body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
 }
 
 .main-container .history {
     box-sizing: border-box;
-    padding-left: 25px;
-    padding-right: 43px;
+    padding-left: 30px;
+    padding-right: 50px;
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
 .history h3 {
-        text-transform: uppercase;
-        padding-bottom: 15px;
-        border-bottom: 1px solid purple;
+    color: #2A0A5A;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #2A0A5A;
+    font-family: 'Courier Prime', monospace;
+    letter-spacing: 5px;
 }
 
-.photo {
+.photo-container {
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
-#headshot {
+.photo-container .square-outline {
+    width: 150px;
+    height: 150px;
+    border: solid lightslategray;
+    position: absolute;
+    left: -10px;
+    top: 35px;
+}
+
+.photo-container #headshot {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    box-shadow: -10px 10px purple;
+    z-index: 100;
 }
 
-.bio {
+header .bio {
     width: 70%;
     padding-right: 10px;
     color: #2A0A5A;
@@ -72,14 +96,40 @@
 #name {
     color: #2A0A5A;
     text-transform: uppercase;
+    font-family: 'Candal', sans-serif;
     font-size: 50px;
     padding-bottom: 15px;
     border-bottom: 2px solid #2A0A5A;
-    font-family: 'Kanit', sans-serif;
     line-height: 60px;
+    letter-spacing: 3px;
 }
 
 h2 {
     color: #2A0A5A;
+    font-family: 'Courier Prime', monospace;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
+.title, .subtitle {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 14px;
+}
+
+.title {
+    font-weight: 400;
+}
+
+.subtitle {
+    font-weight: 200;
+}
+
+p, li {
+    font-family: 'Courier Prime', monospace;
+    font-size: 14px;
+}
+
+article {
+    padding-bottom: 20px;
+}
