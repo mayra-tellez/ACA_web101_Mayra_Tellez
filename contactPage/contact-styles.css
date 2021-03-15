@@ -1,0 +1,47 @@
+body {
+    margin: 0%;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+.nav-menu {
+    background-color: chartreuse;
+}
+
+.feature {
+    background-color: coral;
+}
+
+.contact-form {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+}
+
+.message-area {
+    background-color: darkslateblue;
+}
+
+.optional-area {
+    background-color: firebrick;
+}
+
+.checkboxes {
+    background-color: forestgreen;
+}
+
+.action-req {
+    background-color: gray;
+}
+
+.submit-button {
+    background-color: hotpink;
+}
