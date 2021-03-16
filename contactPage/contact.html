@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./contact-styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Shrikhand&display=swap" rel="stylesheet">
     <title>Contact Mayra</title>
 </head>
 <body>
     <main>
         <header>
-            MT
+            <a class="link-home" href="../myPortfolio/index.html">MT</a>
         </header>
         <section class="nav-menu">
             <nav>
                 <a class="nav-button" href="../resumePage/resume.html">Resume</a>
                 <a class="nav-button" href="../aboutPage/about.html">About </a>
                 <a class="nav-button" href="https://mayra-tellez.medium.com/">Blog</a>
-                <a class="nav-button" href="./contactPage/contact.html">Contact</a>
+                <a class="nav-button" id="current-button" href="./contactPage/contact.html">Contact</a>
             </nav>
         </section>
-        <section class="feature">
+        <!-- <section class="side" id="side1">
         </section>
-        <section class="contact-form">
+        <section class="side" id="side2">
+        </section> -->
+        <div class="contact-form">
             <form action="result.html" method="GET">
                 <section class="message-area">
                     <label for="email">Email:</label><br>
                     <input type="email" id="email" name="email" required><br>
                     <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" minlength="20" maxlength="500" required>
-                        comments
+                    <textarea id="message" name="message" minlength="20" maxlength="500" placeholder="comments" required>
                     </textarea>
                 </section>
                 <section class="optional-area">
@@ -61,7 +64,7 @@
                     <input type="submit">
                 </div>
             </form>
-        </section>
+        </div>
     </main>
 </body>
 </html>
