@@ -17,6 +17,10 @@ h1 {
   padding-left: 10px;
 }
 
+#page-title {
+  color: rgb(247, 161, 1);
+}
+
 /* /////// LAYOUT /////// */
 .row {
   display: flex;
