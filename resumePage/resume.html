@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Resume</title>
     <link rel="stylesheet" href="./resume-styles.css">
+    <script src="resume-interactive.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Courier+Prime&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/434da06752.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Random Resume</title>
 </head>
 <body>
     <div class="main-container">
         <header>
             <section class="photo-container">
-            <img id="headshot" src="./resume headshot.jpg" alt="resume headshot">
+            <img id="headshot" src="./resume headshot.jpg" alt="resume headshot" onmouseenter="hideImg()" onmouseleave="showImg()">
             <div class="square-outline"></div>
                 <h2>Software<br>Expert</h2>
             </section>
             <section class="bio">
-               <h1 id="name">Random<br>Person</h1>
+               <h1 id="name" onclick="animateName()">Random<br>Person</h1>
                 <p>I'm a software engineer with over two decades of experience working in the tech industry, providing valuable expertise to start-up businesses.</p>
             </section>
         </header>
             <section class="contact-info">
                 <h4>Contact<br>Info</h4>
-                <i class="fas fa-phone-square-alt fa-2x"></i><br>
-                <span class="contact-body">123-456-7890</span><br>
+                <i id="phoneIcon" onclick="showNum()" class="fas fa-phone-square-alt fa-2x"></i><br>
+                <div id="phoneNum"><span class="contact-body">123-456-7890</span></div><br>
                 <i class="fas fa-map-marker-alt fa-2x"></i><br>
                 <span class="contact-body">123 Anywhere Street<br>
                 Any City, State,<br>
