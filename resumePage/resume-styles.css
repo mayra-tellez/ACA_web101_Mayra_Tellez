@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: 3fr 7fr;
-    background-color: #F9FFFB;
+    background-color: #f9feff;
 }
 
 .main-container header {
@@ -44,6 +44,15 @@
 .contact-info .contact-body {
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
+}
+
+#phoneNum {
+    display: none;
+}
+
+#phoneIcon:hover {
+    cursor: pointer;
+    color: rgb(152, 234, 255);
 }
 
 .main-container .history {
@@ -93,15 +102,25 @@ header .bio {
     color: #2A0A5A;
 }
 
+.bio p {
+    margin-top: 0;
+    padding-top: 35px;
+    border-top: solid #2A0A5A 2px;
+}
+
 #name {
+    margin-bottom: 0;
     color: #2A0A5A;
     text-transform: uppercase;
     font-family: 'Candal', sans-serif;
     font-size: 50px;
     padding-bottom: 15px;
-    border-bottom: 2px solid #2A0A5A;
     line-height: 60px;
     letter-spacing: 3px;
+}
+
+#name:hover {
+    cursor: pointer;
 }
 
 h2 {
