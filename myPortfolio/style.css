@@ -74,7 +74,8 @@
 
   h2 {
     grid-column: 2/3;
-    margin: 2% auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
     font-family: 'Nunito Sans';
     font-style: italic;
     text-decoration: overline;
@@ -87,27 +88,25 @@
     margin: 3% auto;
   }
 
-  button {
+  #portfolio-btn {
+    padding: 15px 30px;
     grid-column: 2/3;
-    margin: 3% auto;
-    width: 55%;
-    height: 10%;
     font-family: 'Nunito Sans';
     font-size: 20px;
     border-radius: 25px;
     border: none;
     background: #1a436b;
-    padding: 15px;
-    padding-bottom: 5%;
     text-align: center;
+    text-decoration: none;
     color: white;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     font-weight: bold;
+    transition: color 0.5s ease, background-color 0.5s ease;
   }
 
-  #portfolio:hover {
-    background:rgb(169, 197, 228);
+  #portfolio-btn:hover {
+    background-color:rgb(169, 197, 228);
     color: black;
   }
 
